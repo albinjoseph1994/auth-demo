@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+.errors {
+    color: #dc3545 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.cursorPointer {
+    cursor: pointer !important;
+}
+
+.cursorDisabled {
+    cursor: not-allowed !important;
+}
+
+.align {
+    align-items: center;
+    height: 100vh;
+}
+
+.copyright {
+    background-color: #343A3A;
+}
+
+.py-4 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.white {
+    color: #fff !important;
+}
