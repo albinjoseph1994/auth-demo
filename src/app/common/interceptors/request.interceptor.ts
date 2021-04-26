@@ -15,7 +15,7 @@ export class RequestInterceptor implements HttpInterceptor {
             if (JWT && JWT.token) {
                 request = request.clone({
                     setHeaders: {
-                        'X-ARTEFAST-ACCESS-TOKEN': `${environment.accessToken}`
+                        Authorization: `Bearer ${JWT.token}`
                     }
                 });
             }

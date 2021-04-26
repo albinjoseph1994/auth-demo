@@ -1,7 +1,6 @@
 export const environment = {
   production: false,
-  baseUrl: 'https://devgroceryapi.spericorn.com/api',
-  accessToken: ''
+  baseUrl: 'https://devgroceryapi.spericorn.com/api'
 };
 
 
