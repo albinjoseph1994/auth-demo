@@ -23,8 +23,7 @@
                     <input type="password" class="form-control" placeholder="Password" autocomplete="off" formControlName="password">
                     <div *ngIf="submitted && formValidator.password.errors" class="mt-1 errors">
                         <div *ngIf="formValidator.password.errors.required">This field is required</div>
-                        <div *ngIf="formValidator.password.errors.pattern">Enter a valid password</div>
-                        <div *ngIf="formValidator.password.errors.minlength">Password must be atleast 8 characters</div>
+                        <div *ngIf="formValidator.password.errors.minlength || formValidator.password.errors.pattern">Password must be atleast 8 characters</div>
                     </div>
                 </div>
 
@@ -32,8 +31,7 @@
                     <input type="password" class="form-control" placeholder="Confirm Password" autocomplete="off" formControlName="password_confirmation">
                     <div *ngIf="submitted && formValidator.password_confirmation.errors" class="mt-1 errors">
                         <div *ngIf="formValidator.password_confirmation.errors.required">This field is required</div>
-                        <div *ngIf="formValidator.password_confirmation.errors.pattern">Enter a valid password</div>
-                        <div *ngIf="formValidator.password_confirmation.errors.minlength">Password must be atleast 8 characters</div>
+                        <div *ngIf="formValidator.password_confirmation.errors.minlength || formValidator.password_confirmation.errors.pattern">Password must contain atleast 8 characters and one special character</div>
                         <div *ngIf="formValidator.password_confirmation.errors.mustMatch">Password mismatch</div>
                     </div>
                 </div>

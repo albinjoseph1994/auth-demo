@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://devgroceryapi.spericorn.com/api/auth'
+  baseUrl: 'https://devgroceryapi.spericorn.com/api'
 };

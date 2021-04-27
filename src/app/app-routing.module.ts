@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './common/guards/auth.guard';
 import { RedirectGuard } from './common/guards/redirect.guard';
-// import { RedirectGuard } from './common/guards/redirect.guard';
-
 
 const routes: Routes = [
   {

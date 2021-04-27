@@ -30,8 +30,8 @@ export class RegisterComponent implements OnInit {
     this.titleservice.setTitle('Sign Up');
     this.registerForm = this.formBuilder.group({
       email: ['', { validators: [Validators.required, Validators.pattern(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/)] }],
-      password: ['', { validators: [Validators.required, Validators.pattern(/(.*\S.*)/), Validators.minLength(8)] }],
-      password_confirmation: ['', [Validators.required, Validators.pattern(/(.*\S.*)/), Validators.minLength(8)]]
+      password: ['', { validators: [Validators.required, Validators.pattern(/(?=.*[!@#$%^&*])/), Validators.minLength(8)] }],
+      password_confirmation: ['', [Validators.required, Validators.pattern(/(?=.*[!@#$%^&*])/), Validators.minLength(8)]]
     },
       {
         validator: MustMatch('password', 'password_confirmation')
